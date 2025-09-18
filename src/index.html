@@ -1,49 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="icon" type="image/png" href="../public/images/web-icon.png">
+  <link rel="icon" type="image/png" href="../public/icons/icon-web.png">
   <title>Patricia Parreira</title>
 </head>
-<body>
 
+<body>
+  
   <header class="header">
-    <img class="webImage" src="../public/images/web-icon.png">
+    <img class="webImage" src="../public/icons/icon-web.png">
     <h1>Patricia Parreira</h1>
     <nav>
-      <li>
-        <ul>Photography</ul>
-        <ul>Illustration</ul>
-      </li>
+      <div class="menu-toggle" id="menu-toggle" alt="menu">☰</div>
+      <!-- <ul>
+        <li>Photography</li>
+        <li>Illustration</li>
+      </ul> -->
     </nav>
   </header>
 
   <main>
-    <article class="article">
-      <img class="article_image" src="../public/images/2014-sobarzo-1.JPG" alt="">
-      <h3 class="article_title"></h3>
-      <p class="article_text"></p>
-    </article>
-    <article class="article">
-      <img class="article_image" src="../public/images/2014-sobarzo-2.JPG" alt="">
-      <h3 class="article_title"></h3>
-      <p class="article_text"></p>
-    </article>
-    <article class="article">
-      <img class="article_image" src="../public/images/2014-sobarzo-3.JPG" alt="">
-      <h3 class="article_title"></h3>
-      <p class="article_text"></p>
-    </article>
+    <div class="articlesSection">
+      <article class="article">
+        <img class="article_image" src="../public/images/2014-sobarzo-1.JPG" alt="">
+        <h3 class="article_title">La casa I</h3>
+        <p class="article_text">La mesa de coser de mi abuela.</p>
+      </article>
+      <article class="article">
+        <img class="article_image" src="../public/images/2014-sobarzo-2.JPG" alt="">
+        <h3 class="article_title">La casa II</h3>
+        <p class="article_text">El árbol talado frente al garaje.</p>
+      </article>
+      <article class="article">
+        <img class="article_image" src="../public/images/2014-sobarzo-3.JPG" alt="">
+        <h3 class="article_title">La casa III</h3>
+        <p class="article_text">Algunas flores del jardín.</p>
+      </article>
+    </div>
   </main>
 
   <footer class="footer">
     <h4>Contact</h4>
-    <p>patriciaparreira@email.com</p>
+    <p class="footer_p">patriciaparreira@email.com</p>
+    <p>&copy; 2025. Todos los derechos reservados.</p>
   </footer>
 
-  <script type="text/javascript" src="./main.js"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
 </body>
+
 </html>
