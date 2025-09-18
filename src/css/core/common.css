@@ -1,0 +1,40 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* HEADINGS AND TEXT */
+
+h1 {
+  font-family: var(--font-heading);
+  color: var(--color-light);
+  font-size: 1.25rem;
+}
+
+h2 {
+  margin-bottom: 16px;
+
+  font-family: var(--font-heading);
+  color: var(--color-medium);
+  font-size: 1.60rem;
+}
+
+h3 {
+  font-family: var(--font-heading);
+  color: var(--color-medium);
+  font-size: 1.15rem;
+}
+
+h4 {
+  margin-bottom: 6px;
+
+  font-family: var(--font-heading);
+  color: var(--color-light);
+  font-size: 0.9rem;
+}
+
+p, a {
+  font-family: var(--font-text);
+  color: var(--color-dark);
+  font-size: 1rem;
+}

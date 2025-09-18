@@ -1,5 +1,6 @@
 @import url('core/reset.css');
 @import url('core/variables.css');
+@import url('core/common.css');
 
 
 /* HEADER */
@@ -24,9 +25,43 @@ header {
   width: 24px;
 }
 
-.menu-toggle {
+.menuToggle {
   color: var(--color-light);
   font-weight: bold;
+  cursor: pointer;
+}
+
+.navLinks {
+  position: absolute;
+  right: 0;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+
+  list-style: none;
+  background-color: var(--color-dark);
+  border-radius: 4px;
+
+  opacity: 0;
+  transform: translateY(-10px);
+  visibility: hidden;
+  pointer-events: none; /* Evita clics cuando está oculto */
+  transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease;
+}
+
+.navLinks.show {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.navLinks li a {
+  text-decoration: none;
+  color: var(--color-light);
 }
 
 
