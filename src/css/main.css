@@ -1,0 +1,91 @@
+@import url('core/reset.css');
+@import url('core/variables.css');
+
+
+/* HEADER */
+
+header {
+  background-color: var(--color-dark);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.titleIconContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.webImage {
+  width: 24px;
+}
+
+.menu-toggle {
+  color: var(--color-light);
+  font-weight: bold;
+}
+
+
+
+/* PAGE */
+
+main {
+  background-color: var(--color-light);
+  padding: 50px 20px;
+}
+
+.pageDescription {
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.articlesSection {
+  padding: 0px 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.article_image {
+  margin-bottom: 10px;
+  width: 100%;
+  aspect-ratio: 6 / 7;
+  object-fit: cover;
+
+  border-radius: 2%;
+  box-shadow: 1px 1px 2px 1px rgb(0 0 0 / 20%);
+}
+
+article p {
+  font-size: 0.8rem;
+}
+
+
+/* FOOTER */
+footer {
+  background-color: var(--color-dark);
+  padding: 30px 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+footer p {
+  color: var(--color-medium);
+  font-size: 0.8rem;
+}
