@@ -2,8 +2,8 @@
 
 // MENU
 
-const menuToggle = document.getElementById("menuToggle");
-const navLinks = document.getElementById("navLinks");
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
 const links = document.querySelectorAll(".link");
 
 menuToggle.addEventListener("click", () => {
@@ -124,5 +124,35 @@ document.addEventListener("keydown", (e) => {
     case "ArrowRight":
       nextImage();
       break;
+  }
+});
+
+// LIGHT/DARK THEME
+
+// Theme toggle functionality
+const toggleSwitch = document.querySelector('.toggle-switch');
+const body = document.body;
+
+// Verify theme + set light by defect
+const currentTheme = localStorage.getItem('theme') || 'light';
+body.setAttribute('data-theme', currentTheme);
+
+// Update toggle to current theme
+if (currentTheme === 'light') {
+  toggleSwitch.classList.add('light');
+}
+
+// Event listener
+toggleSwitch.addEventListener('click', () => {
+  const isLight = toggleSwitch.classList.contains('light');
+  
+  if (isLight) {
+    toggleSwitch.classList.remove('light');
+    body.setAttribute('data-theme', 'dark');
+    localStorage.setItem('theme', 'dark');
+  } else {
+    toggleSwitch.classList.add('light');
+    body.setAttribute('data-theme', 'light');
+    localStorage.setItem('theme', 'light');
   }
 });

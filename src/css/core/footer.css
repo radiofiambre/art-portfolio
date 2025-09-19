@@ -1,5 +1,5 @@
 footer {
-  background-color: var(--color-dark);
+  background-color: var(--color-lighter);
   padding: 15px 40px;
 
   display: flex;
@@ -8,7 +8,7 @@ footer {
   gap: 12px;
 }
 
-.contactBox {
+.contact-box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,7 +28,7 @@ footer {
     justify-content: space-around;
   }
 
-  .contactBox {
+  .contact-box {
     display: flex;
     flex-direction: row;
     gap: 15px;
@@ -36,7 +36,7 @@ footer {
  }
 
 @media (min-width: 1024px) { 
-  .contactBox {
+  .contact-box {
     gap: 30px;
   }
  }

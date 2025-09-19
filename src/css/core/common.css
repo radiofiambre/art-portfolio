@@ -14,9 +14,9 @@ body {
 
 /* HEADINGS AND TEXT */
 
-h1 {
+h1, div, button {
   font-family: var(--font-heading);
-  color: var(--color-light);
+  color: var(--color-darker);
   font-size: 1.25rem;
 }
 
@@ -36,14 +36,19 @@ h3 {
 
 h4 {
   font-family: var(--font-heading);
-  color: var(--color-light);
+  color: var(--color-darker);
   font-size: 0.9rem;
 }
 
-p,
-a {
+p, a {
   font-family: var(--font-text);
   color: var(--color-dark);
+  font-size: 1rem;
+}
+
+span {
+  font-family: var(--font-text);
+  color: var(--color-medium);
   font-size: 1rem;
 }
 
@@ -55,6 +60,11 @@ article p {
 footer p {
   color: var(--color-medium);
   font-size: 0.6rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: var(--color-medium);
 }
 
 /* BREAKPOINTS */
@@ -78,8 +88,11 @@ footer p {
     font-size: 1.2rem;
   }
 
-  p,
-  a {
+  p, a {
+    font-size: 1.1rem;
+  }
+
+  span {
     font-size: 1.1rem;
   }
 
