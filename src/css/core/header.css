@@ -1,0 +1,84 @@
+header {
+  background-color: var(--color-dark);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.titleIconContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.webImage {
+  width: 24px;
+}
+
+.menuToggle {
+  color: var(--color-light);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navLinks {
+  position: absolute;
+  right: 0;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+
+  list-style: none;
+  background-color: var(--color-dark);
+  border-radius: 4px;
+
+  opacity: 0;
+  transform: translateY(-10px);
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease;
+}
+
+.navLinks.show {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.navLinks li a {
+  text-decoration: none;
+  color: var(--color-light);
+}
+
+
+
+/* BREAKPOINTS */
+
+@media (min-width: 768px) { 
+
+ }
+
+
+
+@media (min-width: 1024px) { 
+  
+ }
+
+
+
+@media (min-width: 1440px) { 
+  
+ }
+
+
+
+@media (min-width: 1920px) { 
+  
+ }

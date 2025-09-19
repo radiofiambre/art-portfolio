@@ -2,6 +2,15 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: var(--color-light);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  min-height: 100vh;
+}
 
 /* HEADINGS AND TEXT */
 
@@ -16,25 +25,79 @@ h2 {
 
   font-family: var(--font-heading);
   color: var(--color-medium);
-  font-size: 1.60rem;
+  font-size: 1.6rem;
 }
 
 h3 {
   font-family: var(--font-heading);
-  color: var(--color-medium);
+  color: var(--color-dark);
   font-size: 1.15rem;
 }
 
 h4 {
-  margin-bottom: 6px;
-
   font-family: var(--font-heading);
   color: var(--color-light);
   font-size: 0.9rem;
 }
 
-p, a {
+p,
+a {
   font-family: var(--font-text);
   color: var(--color-dark);
   font-size: 1rem;
+}
+
+article p {
+  color: var(--color-medium);
+  font-size: 0.8rem;
+}
+
+footer p {
+  color: var(--color-medium);
+  font-size: 0.6rem;
+}
+
+/* BREAKPOINTS */
+
+@media (min-width: 768px) {
+  h1, div {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    margin-bottom: 18px;
+
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  p,
+  a {
+    font-size: 1.1rem;
+  }
+
+  article p {
+    font-size: 0.9rem;
+  }
+
+  footer p {
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 1.65rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
 }

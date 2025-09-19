@@ -1,0 +1,99 @@
+main {
+  padding: 50px 50px;
+  min-height: 100%;
+}
+
+.pageDescription {
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.articlesSection {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.article_image {
+  margin-bottom: 10px;
+  width: 100%;
+  aspect-ratio: 6 / 7;
+  object-fit: cover;
+
+  border-radius: 2%;
+  box-shadow: 1px 1px 2px 1px rgb(0 0 0 / 20%);
+}
+
+
+
+
+
+/* BREAKPOINTS */
+
+@media (min-width: 768px) { 
+  main {
+    padding: 75px 75px;
+  }
+
+  .pageDescription {
+    padding-bottom: 60px;
+  }
+
+  .articlesSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+  }
+
+  .article {
+    gap: 15px;
+  }
+ }
+
+
+
+@media (min-width: 1024px) {
+  main {
+    padding: 100px 100px;
+  }
+
+  .articlesSection {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 70px;
+  }
+ }
+
+
+
+@media (min-width: 1440px) { 
+  main {
+    padding: 100px 200px;
+  }
+
+  .articlesSection {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+  }
+ }
+
+
+
+@media (min-width: 1920px) { 
+  main {
+    padding: 100px 250px;
+  }
+
+  .articlesSection {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 150px;
+  }
+ }
