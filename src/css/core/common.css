@@ -60,7 +60,7 @@ footer p {
 /* BREAKPOINTS */
 
 @media (min-width: 768px) {
-  h1, div {
+  h1, div, button {
     font-size: 1.5rem;
   }
 

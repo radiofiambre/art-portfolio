@@ -1,71 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Pirata+One&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Pirata+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="icon" type="image/png" href="../public/icons/icon-web.png" />
+    <title>Patricia Parreira</title>
+  </head>
 
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="icon" type="image/png" href="../public/icons/icon-web.png">
-  <title>Patricia Parreira</title>
-</head>
+  <body>
+    <header>
+      <div class="titleIconContainer">
+        <img class="webImage" src="../public/icons/icon-web.png" />
+        <h1>RadioFiambre</h1>
+      </div>
+      <nav>
+        <div class="menuToggle" id="menuToggle" alt="menu">☰</div>
+        <ul class="navLinks" id="navLinks">
+          <li><a class="link" href="#Illustration">Illustration</a></li>
+          <li><a class="link" href="">Photography</a></li>
+          <li><a class="link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  
-  <header>
-    <div class="titleIconContainer">
-      <img class="webImage" src="../public/icons/icon-web.png">
-      <h1>RadioFiambre</h1>
+    <main>
+      <div class="pageDescription">
+        <h2>Illustration</h2>
+        <p>Catalogue of digital illustrations made with Procreate.</p>
+      </div>
+      <div class="articlesSection">
+        <article class="article">
+          <img
+            class="article_image"
+            src="../public/images/2020_05_Uni.jpg"
+            alt="Uni the Band illustration"
+          />
+          <h3 class="article_title">Uni, 2020</h3>
+          <p class="article_text">
+            Charlotte Kemp Muhl and Jack James, members of the band Uni and the
+            Urchins.
+          </p>
+        </article>
+        <article class="article">
+          <img
+            class="article_image"
+            src="../public/images/2017_Shaolin.jpg"
+            alt="Shaolin Fantastic illustration"
+          />
+          <h3 class="article_title">Shaolin, 2017</h3>
+          <p class="article_text" >
+            DJ Shaolin Fantastic from "The Get Down" TV series.
+          </p>
+        </article>
+        <article class="article">
+          <img
+            class="article_image"
+            src="../public/images/2020_07_Amy.jpg"
+            alt="Amy Winehouse illustration"
+          />
+          <h3 class="article_title">Amy, 2020</h3>
+          <p class="article_text">
+            Soul legend Amy Winehouse talking on the phone.
+          </p>
+        </article>
+      </div>
+    </main>
+
+    <div class="modal" id="imageModal">
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose">&times;</button>
+        <img class="modal-image" id="modalImage" src="" alt=""/>
+        <div class="modal-dots" id="modalDots"></div>
+      </div>
+      <button class="modal-nav-btn prev" id="prevBtn">‹</button>
+      <button class="modal-nav-btn next" id="nextBtn">›</button>
     </div>
-    <nav>
 
-      <div class="menuToggle" alt="menu">☰</div>
+    <footer>
+      <div class="contactBox">
+        <h4 id="contact">Contact</h4>
+        <p>radiofiambre@email.com</p>
+      </div>
+      <p class="footer_copy">&copy; 2025. All rights reserved.</p>
+    </footer>
 
-      <ul class="navLinks">
-        <li ><a class="link" href="#Illustration">Illustration</a></li>
-        <li ><a class="link" href="">Photography</a></li>
-        <li ><a class="link" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <div class="pageDescription">
-      <h2>Illustration</h2>
-      <p>Catalogue of digital illustrations made with Procreate.</p>
-    </div>
-    <div class="articlesSection">
-      <article class="article">
-        <img class="article_image" src="../public/images/2020_05_Uni.jpg" alt="">
-        <h3 class="article_title">Uni, 2020</h3>
-        <p class="article_text">Charlotte Kemp Muhl and Jack James, members of the band Uni and the Urchins.</p>
-      </article>
-      <article class="article">
-        <img class="article_image" src="../public/images/2017_Shaolin.jpg" alt="">
-        <h3 class="article_title">Shaolin, 2017</h3>
-        <p class="article_text">DJ Shaolin Fantastic from "The Get Down" TV series.</p>
-      </article>
-      <article class="article">
-        <img class="article_image" src="../public/images/2020_07_Amy.jpg" alt="">
-        <h3 class="article_title">Amy, 2020</h3>
-        <p class="article_text">Soul legend Amy Winehouse talking on the phone.</p>
-      </article>
-    </div>
-  </main>
-
-  <footer>
-    <div class="contactBox">
-      <h4 id="contact">Contact</h4>
-      <p>radiofiambre@email.com</p>
-    </div>
-    <p class="footer_copy">&copy; 2025. All rights reserved.</p>
-  </footer>
-
-  <script type="text/javascript" src="./js/main.js"></script>
-</body>
-
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
 </html>

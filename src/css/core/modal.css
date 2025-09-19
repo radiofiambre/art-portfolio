@@ -1,0 +1,181 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.9);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.modal-image {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* Botón de cerrar */
+
+.modal-close {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: white;
+
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.modal-close:hover {
+  opacity: 0.7;
+}
+
+/* Botones de navegación */
+
+.modal-nav-btn {
+  width: 35px;
+  height: 35px;
+  border: none;
+  color: white;
+
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  z-index: 1001;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-nav-btn:hover {
+  opacity: 0.7;
+}
+
+.modal-nav-btn.prev {
+  left: 20px;
+}
+
+.modal-nav-btn.next {
+  right: 20px;
+}
+
+/* Puntos de navegación */
+
+.modal-dots {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.modal-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.modal-dot.active {
+  background-color: white;
+  transform: scale(1.2);
+}
+
+.modal-dot:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* BREAKPOINTS */
+
+@media (min-width: 768px) {
+  .modal-nav-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .modal-nav-btn {
+    width: 45px;
+    height: 45px;
+  }
+
+  .modal-nav-btn.prev {
+    left: 30px;
+  }
+
+  .modal-nav-btn.next {
+    right: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .modal-close {
+    top: 10px;
+    right: 20px;
+  }
+
+  .modal-nav-btn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .modal-nav-btn.prev {
+    left: 70px;
+  }
+
+  .modal-nav-btn.next {
+    right: 70px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .modal-nav-btn.prev {
+    left: 100px;
+  }
+
+  .modal-nav-btn.next {
+    right: 100px;
+  }
+}
