@@ -6,14 +6,16 @@ const menuToggle = document.getElementById("menu-toggle");
 const navLinks = document.getElementById("nav-links");
 const links = document.querySelectorAll(".link");
 
-menuToggle.addEventListener("click", () => {
+menuToggle.addEventListener("click", (e) => {
+  e.stopPropagation();
   navLinks.classList.toggle("show");
 });
 
-links.forEach((link) => {
-  link.addEventListener("click", () => {
+document.addEventListener("click", (e) => {
+  if (navLinks.classList.contains("show") && 
+      (!navLinks.contains(e.target) || e.target.classList.contains("link"))) {
     navLinks.classList.remove("show");
-  });
+  }
 });
 
 // MODAL
