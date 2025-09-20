@@ -5,6 +5,22 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;  
+  z-index: 1000;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+header.hidden {
+  transform: translateY(-100%);
+}
+
+body {
+  margin-top: 80px;
 }
 
 .title-icon-container {

@@ -156,3 +156,20 @@ toggleSwitch.addEventListener('click', () => {
     localStorage.setItem('theme', 'light');
   }
 });
+
+// SMART HEADER
+
+let lastScrollTop = 0;
+const header = document.querySelector('header');
+
+window.addEventListener('scroll', function() {
+  let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  
+  if (currentScrollTop > lastScrollTop && currentScrollTop > 100) {
+    header.classList.add('hidden');
+  } else if (currentScrollTop < lastScrollTop) {
+    header.classList.remove('hidden');
+  }
+  
+  lastScrollTop = currentScrollTop;
+});
