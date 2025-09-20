@@ -41,6 +41,7 @@ Used animations to improve user experience.
 ## 🏛️ Project Structure
 ```
 ├── README.md
+├── index.html
 ├── public
 │   ├── icons
 │   └── images
@@ -48,7 +49,6 @@ Used animations to improve user experience.
     ├── css
     │   ├── core
     │   └── main.css
-    ├── index.html
     └── js
         └── main.js
 ```

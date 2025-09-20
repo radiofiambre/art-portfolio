@@ -117,7 +117,7 @@ body {
   transition: transform 0.4s ease;
 }
 
-.toggle-switch.light .toggle-slider {
+.toggle-switch.dark .toggle-slider {
   transform: translateX(-11px);
 }
 

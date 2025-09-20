@@ -135,27 +135,27 @@ document.addEventListener("keydown", (e) => {
 const toggleSwitch = document.querySelector('.toggle-switch');
 const body = document.body;
 
-// Verify theme + set light by defect
-const currentTheme = localStorage.getItem('theme') || 'light';
+// Verify theme + set dark by defect
+const currentTheme = localStorage.getItem('theme') || 'dark';
 body.setAttribute('data-theme', currentTheme);
 
 // Update toggle to current theme
-if (currentTheme === 'light') {
-  toggleSwitch.classList.add('light');
+if (currentTheme === 'dark') {
+  toggleSwitch.classList.add('dark');
 }
 
 // Event listener
 toggleSwitch.addEventListener('click', () => {
-  const isLight = toggleSwitch.classList.contains('light');
+  const isDark = toggleSwitch.classList.contains('dark');
   
-  if (isLight) {
-    toggleSwitch.classList.remove('light');
-    body.setAttribute('data-theme', 'dark');
-    localStorage.setItem('theme', 'dark');
-  } else {
-    toggleSwitch.classList.add('light');
+  if (isDark) {
+    toggleSwitch.classList.remove('dark');
     body.setAttribute('data-theme', 'light');
     localStorage.setItem('theme', 'light');
+  } else {
+    toggleSwitch.classList.add('dark');
+    body.setAttribute('data-theme', 'dark');
+    localStorage.setItem('theme', 'dark');
   }
 });
 
