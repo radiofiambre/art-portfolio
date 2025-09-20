@@ -31,13 +31,13 @@ h2 {
 h3 {
   font-family: var(--font-heading);
   color: var(--color-dark);
-  font-size: 1.15rem;
+  font-size: 1.25rem;
 }
 
 h4 {
   font-family: var(--font-heading);
   color: var(--color-darker);
-  font-size: 0.9rem;
+  font-size: 1.15rem;
 }
 
 p, a {
@@ -55,12 +55,12 @@ span {
 
 article p {
   color: var(--color-medium);
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 footer p {
   color: var(--color-medium);
-  font-size: 0.6rem;
+  font-size: 0.8rem;
 }
 
 .nav-links li a {
@@ -78,7 +78,7 @@ footer p {
   h2 {
     margin-bottom: 18px;
 
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   h3 {
@@ -86,7 +86,7 @@ footer p {
   }
 
   h4 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   p, a {
@@ -98,11 +98,11 @@ footer p {
   }
 
   article p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   footer p {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -112,7 +112,7 @@ footer p {
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
 }
 

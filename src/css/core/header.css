@@ -80,6 +80,12 @@ body {
 
 /* Light-dark theme */
 
+.theme-label {
+  max-height: 20px;
+  max-width: 20px;
+  filter: invert(65%);
+}
+
 .theme-toggle-container {
   margin-top: 25px;
 }

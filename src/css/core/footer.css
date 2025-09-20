@@ -1,6 +1,6 @@
 footer {
   background-color: var(--color-lighter);
-  padding: 15px 40px;
+  padding: 25px 40px;
 
   display: flex;
   flex-direction: column;
@@ -12,7 +12,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px;
+  gap: 12px;
 }
 
 /* BREAKPOINTS */
