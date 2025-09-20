@@ -36,17 +36,13 @@ main {
 }
 
 .article_image:hover {
-  transform:scale(1.02);
+  transform: scale(1.02);
   box-shadow: 3px 3px 6px 3px rgb(0 0 0 / 20%);
 }
 
-
-
-
-
 /* BREAKPOINTS */
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   main {
     padding: 75px 75px;
   }
@@ -65,9 +61,7 @@ main {
   .article {
     gap: 15px;
   }
- }
-
-
+}
 
 @media (min-width: 1024px) {
   main {
@@ -78,11 +72,9 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 70px;
   }
- }
+}
 
-
-
-@media (min-width: 1440px) { 
+@media (min-width: 1440px) {
   main {
     padding: 100px 200px;
   }
@@ -91,11 +83,9 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 100px;
   }
- }
+}
 
-
-
-@media (min-width: 1920px) { 
+@media (min-width: 1920px) {
   main {
     padding: 100px 250px;
   }
@@ -104,4 +94,4 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 150px;
   }
- }
+}

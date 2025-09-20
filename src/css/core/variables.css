@@ -1,14 +1,13 @@
 :root {
-/* FONTS */
---font-heading: 'Pirata One';
---font-text: 'Nunito Sans';
+  /* FONTS */
+  --font-heading: "Pirata One";
+  --font-text: "Nunito Sans";
 
-/* COLORS */
---color-light: #f2f2f2;
---color-medium: #8b8b8b;
---color-dark: #191919;
+  /* COLORS */
+  --color-light: #f2f2f2;
+  --color-medium: #8b8b8b;
+  --color-dark: #191919;
 }
-
 
 /* Light theme */
 [data-theme="light"] {

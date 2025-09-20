@@ -12,7 +12,7 @@ body {
   min-height: 100vh;
 }
 
-/* HEADINGS AND TEXT */
+/* Headings and text */
 
 h1, div, button {
   font-family: var(--font-heading);
@@ -49,7 +49,7 @@ p, a {
 span {
   font-family: var(--font-text);
   color: var(--color-medium);
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 article p {
@@ -93,7 +93,7 @@ footer p {
   }
 
   span {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 
   article p {
@@ -112,5 +112,18 @@ footer p {
 
   h2 {
     font-size: 2rem;
+  }
+}
+
+@media (min-width: 1440px) {
+
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  h2 {
+    font-size: 3rem;
   }
 }

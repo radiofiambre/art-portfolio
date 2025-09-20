@@ -1,3 +1,5 @@
+/* Modal */
+
 .modal {
   position: fixed;
   top: 0;
@@ -43,7 +45,7 @@
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
 }
 
-/* Botón de cerrar */
+/* Modal close button */
 
 .modal-close {
   position: fixed;
@@ -63,7 +65,7 @@
   opacity: 0.7;
 }
 
-/* Botones de navegación */
+/* Modal navigation buttons */
 
 .modal-nav-btn {
   width: 35px;
@@ -99,7 +101,7 @@
   right: 20px;
 }
 
-/* Puntos de navegación */
+/* Modal navigation dots */
 
 .modal-dots {
   display: flex;

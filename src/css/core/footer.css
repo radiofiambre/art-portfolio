@@ -15,11 +15,9 @@ footer {
   gap: 6px;
 }
 
-
-
 /* BREAKPOINTS */
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   footer {
     padding: 20px 40px;
 
@@ -33,10 +31,10 @@ footer {
     flex-direction: row;
     gap: 15px;
   }
- }
+}
 
-@media (min-width: 1024px) { 
+@media (min-width: 1024px) {
   .contact-box {
     gap: 30px;
   }
- }
+}
