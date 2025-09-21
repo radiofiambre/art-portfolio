@@ -28,15 +28,17 @@
         <div class="menu-toggle" id="menu-toggle" alt="menu">☰</div>
         <ul class="nav-links" id="nav-links">
           <li><a class="link" href="#illustration">Illustration</a></li>
-          <li><a class="link" href="">Photography</a></li>
+          <li><a class="link" href="#photography">Photography</a></li>
           <li><a class="link" href="#contact">Contact</a></li>
           <li class="theme-toggle-container">
             <div class="theme-toggle">
-              <span class="theme-label">dark</span>
+              <!-- <span class="theme-label">dark</span> -->
+               <img class="theme-label" src="./public/icons/icon-moon.svg" />
               <div class="toggle-switch">
                 <div class="toggle-slider"></div>
               </div>
-              <span class="theme-label">light</span>
+              <img class="theme-label" src="./public/icons/icon-sun.svg" />
+              <!-- <span class="theme-label">light</span> -->
             </div>
           </li>
         </ul>
@@ -44,52 +46,99 @@
     </header>
 
     <main>
-      <section class="page-description">
-        <h2 id="illustration">Illustration</h2>
-        <p>Catalogue of digital illustrations made with Procreate.</p>
+      <section class="art-section">
+        <section class="section-description">
+          <h2 id="illustration">Illustration</h2>
+          <p>Catalogue of digital illustrations made with Procreate.</p>
+        </section>
+        <section class="articles-section">
+          <article class="article">
+            <img
+              class="article_image"
+              src="./public/images/2020_05_Uni.jpg"
+              alt="Uni the Band illustration"
+            />
+            <h3 class="article_title">Uni</h3>
+            <p class="article_text">
+              Charlotte Kemp Muhl and Jack James, members of the band Uni and the
+              Urchins. 2020.
+            </p>
+          </article>
+          <article class="article">
+            <img
+              class="article_image"
+              src="./public/images/2017_Shaolin.jpg"
+              alt="Shaolin Fantastic illustration"
+            />
+            <h3 class="article_title">Shaolin</h3>
+            <p class="article_text">
+              DJ Shaolin Fantastic from "The Get Down" TV series. 2017
+            </p>
+          </article>
+          <article class="article">
+            <img
+              class="article_image"
+              src="./public/images/2020_07_Amy.jpg"
+              alt="Amy Winehouse illustration"
+            />
+            <h3 class="article_title">Amy</h3>
+            <p class="article_text">
+              Soul legend Amy Winehouse talking on the phone. 2020.
+            </p>
+          </article>
+        </section>
       </section>
-      <section class="articles-section">
-        <article class="article">
-          <img
-            class="article_image"
-            src="./public/images/2020_05_Uni.jpg"
-            alt="Uni the Band illustration"
-          />
-          <h3 class="article_title">Uni, 2020</h3>
-          <p class="article_text">
-            Charlotte Kemp Muhl and Jack James, members of the band Uni and the
-            Urchins.
+
+      <section class="art-section">
+        <section class="section-description">
+          <h2 id="photography">Photography</h2>
+          <p>
+            Images shot with an old Nikon D3100, an even older Cosina CT1 Super
+            and my smartphone.
           </p>
-        </article>
-        <article class="article">
-          <img
-            class="article_image"
-            src="./public/images/2017_Shaolin.jpg"
-            alt="Shaolin Fantastic illustration"
-          />
-          <h3 class="article_title">Shaolin, 2017</h3>
-          <p class="article_text" >
-            DJ Shaolin Fantastic from "The Get Down" TV series.
-          </p>
-        </article>
-        <article class="article">
-          <img
-            class="article_image"
-            src="./public/images/2020_07_Amy.jpg"
-            alt="Amy Winehouse illustration"
-          />
-          <h3 class="article_title">Amy, 2020</h3>
-          <p class="article_text">
-            Soul legend Amy Winehouse talking on the phone.
-          </p>
-        </article>
+        </section>
+        <section class="articles-section">
+          <article class="article">
+            <img
+              class="article_image"
+              src="./public/images/2011_chair.JPG"
+              alt="Uni the Band illustration"
+            />
+            <h3 class="article_title">Not just another conceptual chair</h3>
+            <p class="article_text">
+              Back at college. Salamanca. 2011.
+            </p>
+          </article>
+          <article class="article">
+            <img
+              class="article_image"
+              src="./public/images/2018_bananas.jpeg"
+              alt="Shaolin Fantastic illustration"
+            />
+            <h3 class="article_title">Someone went bananas</h3>
+            <p class="article_text">
+              Maybe Prague. 2018.
+            </p>
+          </article>
+          <article class="article">
+            <img
+              class="article_image"
+              src="./public/images/2023_london.jpeg"
+              alt="Amy Winehouse illustration"
+            />
+            <h3 class="article_title">Plz don't ask</h3>
+            <p class="article_text">
+              London for sure. 2023.
+            </p>
+          </article>
+        </section>
       </section>
     </main>
 
     <div class="modal" id="imageModal">
       <div class="modal-content">
         <button class="modal-close" id="modalClose">x</button>
-        <img class="modal-image" id="modalImage" src="" alt=""/>
+        <img class="modal-image" id="modalImage" src="" alt="" />
         <div class="modal-dots" id="modalDots"></div>
       </div>
       <button class="modal-nav-btn prev" id="prevBtn">‹</button>

@@ -14,6 +14,8 @@ This project is a responsive web portfolio designed to display artwork in an ele
 * Responsive layout
 * Interactive elements (navigation menu, light/dark mode, image gallery)
 
+ℹ️ Following feedback from a colleague and discussion with the AuJ team, it was agreed to add more than three articles to improve the page's appearance and make it more meaningful. As a result, the Photography section and its content were added.
+
 ## 🛠️ Technologies
 
 * HTML5
@@ -60,9 +62,9 @@ cd art-portfolio
 ```
 
 ## 🚧 Future developments
-* Add more content on Illustration page.
-* Add a Photography page.
-* Add a Contact page.
+* Create an Illustration page and add more content.
+* Create a Photography page and add more content.
+* Create a Contact page.
 
 Open index.html in browser.
 
